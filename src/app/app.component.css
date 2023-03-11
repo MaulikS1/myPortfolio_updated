@@ -1,77 +1,27 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-  }
-  
-  .logo a {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .menu-icon {
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-  }
-  
-  .menu-icon:hover {
-    color: #bbb;
-  }
-  
-  .menu {
-    display: flex;
-    list-style: none;
+/* navigation.component.css */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .menu li {
-    margin-right: 20px;
+  .nav-item {
+    margin-bottom: 1rem;
   }
-  
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  
-  .menu a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .menu {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      padding: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-  
-    .menu li {
-      margin: 10px 0;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    input[type="checkbox"] {
-      display: none;
-    }
-  
-    input[type="checkbox"]:checked + .menu {
-      display: flex;
-    }
-  }
-  
+}
