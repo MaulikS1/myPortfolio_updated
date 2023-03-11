@@ -1,8 +1,16 @@
-/* navigation.component.css */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #BDC3C7 !important; /* add background color here */
+}
+
 
 .navbar-brand {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 24px;
+  color: #0077b6;
 }
 
 .navbar-nav {
@@ -11,6 +19,7 @@
 
 .nav-link {
   font-weight: bold;
+  color: #0077b6;
 }
 
 @media (max-width: 991px) {
@@ -23,5 +32,26 @@
   
   .nav-item {
     margin-bottom: 1rem;
+  }
+  
+  .navbar-toggler {
+    border-color: #0077b6;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #0077b6;
+  }
+  
+  .navbar-collapse {
+    background-color: #ffffff;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #0077b6;
+    font-size: 18px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffa500;
   }
 }
